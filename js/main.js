@@ -17,3 +17,14 @@ for (i = 0; i < 5; i++) {
 }
 
 console.log(simoNums);
+
+var userNums = [];
+
+for (i = 0; i < 5; i++) {
+    do {
+        userNum = parseInt(prompt("Inserisci i cinque numeri (da 1 a 10"));
+        console.log(userNum);
+    } while ((isNaN(userNum) == true) || (userNum < 1) || (userNum > 10) || (userNums.includes(userNum) == true));
+    userNums[i] = userNum;
+    console.log(userNums);
+}
