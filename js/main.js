@@ -26,5 +26,23 @@ for (i = 0; i < 5; i++) {
         console.log(userNum);
     } while ((isNaN(userNum) == true) || (userNum < 1) || (userNum > 10) || (userNums.includes(userNum) == true));
     userNums[i] = userNum;
-    console.log(userNums);
+}
+
+console.log(userNums);
+
+var sameNums = [];
+
+for (i = 0; i < userNums.length; i++) {
+    for (a = 0; a < simoNums.length; a++) {
+        if (userNums[i] == simoNums[a]) {
+            sameNums.push(userNums[i])
+        }
+    }
+}
+
+console.log(sameNums);
+console.log(sameNums.length);
+alert('Hai indovinato '+sameNums.length+' numeri');
+if (sameNums.length > 0) {
+    alert('Ecco quali: '+sameNums);
 }
